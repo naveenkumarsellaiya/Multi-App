@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="theme">
+    <header>
+        <h2>Notes</h2>
+        <p id="Theme"><i class="fas fa-moon" title="GO TO Dark Mode"></i></p>
+    </header>
+    <main id="main">
+        <div class="bg-color">
+            <sapn id="bg-color"></span>
+        </div>
+        <div class="toggle inputDetails">
+            <div>
+                <p>Add a New Note</p>
+                <p id="Error">please Fill both inputbox</p>
+                <input type="text" name="" id="inputvalue" placeholder="Title" required autocomplete="off">
+                <textarea name="" id="text" required placeholder="Start Typing..."></textarea>
+                <div id="btn">
+                    <button id="Addbtn">ADD</button>
+                    <button onclick="cancelbtn()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="content">
+        <div class="showInput">
+            <span>Write Your Notes</p>
+        </div>
+        <div class="Details-head">
+            <div class="details">
+                <div>
+                    <h2 id="heading">MY_Notes</h2>
+                    <p id="para">
+                        Create, edit, delete notes with dark/light mode and interactive interface.
+                    </p>
+                </div>
+                <div class="btn">
+                    <button onclick="deletes(this)">Delete</button>
+                    <button onclick="Edit(this)">Edit</button>
+  </div>
+                <p id="currTime" class="currTime"></p>
+            </div>
+        </div>
+    </div>
+    <script src="notes.js">
+        
+    </script>
+</body>
+
+</html>
